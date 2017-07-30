@@ -8,7 +8,7 @@ local SorakaMenu = Menu("Soraka", "Soraka")
 SorakaMenu:SubMenu("AutoMode", "AutoMode")
 SorakaMenu.AutoMode:Boolean("W", "Auto W", true)
 SorakaMenu.AutoMode:Slider("MHP", "My HP to use W", 300,0,1000,50)
-SorakaMenu.AutoMode:Slider("AHP", "Ally HP to use W", 300,0,1000,50)
+SorakaMenu.AutoMode:Slider("AHP", "Ally HP to use W", 1000,0,4000,50)
 
 OnTick(function (myHero)
   
