@@ -17,9 +17,9 @@ OnTick(function (myHero)
 
 
 --Auto W on ally
-   
+   for _, ally in pairs(GetAllyHeroes()) do	
         if SorakaMenu.AutoMode.W:Value() and ValidTarget(target, 2000) and GetCurrentHP(myHero) >= SorakaMenu.AutoMode.MHP:Value() and GetCurrentHP(ally) <= SorakaMenu.AutoMode.AHP:Value() then
             CastTargetSpell(ally, _W)
         end
-    
+    end
 end)
