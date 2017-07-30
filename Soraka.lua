@@ -1,3 +1,5 @@
+
+
 if GetObjectName(GetMyHero()) ~= "Soraka" then return end
 
 
@@ -14,7 +16,7 @@ OnTick(function (myHero)
 
 --Auto W on ally
    
-        if SorakaMenu.AutoMode.W:Value() and ValidTarget(ally, 2000) and GetCurrentHP(myHero) >= SorakaMenu.AutoMode.MHP:Value() then and GetCurrentHP(ally) <= SorakaMenu.AutoMode.AHP:Value() then
+        if SorakaMenu.AutoMode.W:Value() and ValidTarget(ally, 2000) and GetCurrentHP(myHero) >= SorakaMenu.AutoMode.MHP:Value() and GetCurrentHP(ally) <= SorakaMenu.AutoMode.AHP:Value() then
             CastTargetSpell(ally, _W)
         end
     end
