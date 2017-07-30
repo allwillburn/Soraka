@@ -19,5 +19,5 @@ OnTick(function (myHero)
         if SorakaMenu.AutoMode.W:Value() and ValidTarget(ally, 2000) and GetCurrentHP(myHero) >= SorakaMenu.AutoMode.MHP:Value() and GetCurrentHP(ally) <= SorakaMenu.AutoMode.AHP:Value() then
             CastTargetSpell(ally, _W)
         end
-    end
+    
 end)
